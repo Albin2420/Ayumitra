@@ -1,4 +1,4 @@
-import 'package:ayurmitra/src/presentation/screens/splashscreen/splash.dart';
+import 'package:ayurmitra/src/presentation/screens/registrationscreen/registrationscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -12,7 +12,7 @@ class AyurMitra extends StatelessWidget {
       title: 'AyurMitra',
       debugShowCheckedModeBanner: false,
       builder: EasyLoading.init(),
-      home: SplashScreen(),
+      home: Registrationscreen(),
     );
   }
 }
