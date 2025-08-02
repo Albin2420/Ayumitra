@@ -7,8 +7,7 @@ import 'package:ayurmitra/src/presentation/widgets/customTextField.dart';
 import 'package:ayurmitra/src/presentation/widgets/customdatePicker.dart';
 import 'package:ayurmitra/src/presentation/widgets/customdropDown.dart';
 import 'package:ayurmitra/src/presentation/widgets/hourdropdown.dart';
-import 'package:ayurmitra/src/presentation/widgets/minutedropdown.dart'
-    show MinuteDropdown;
+import 'package:ayurmitra/src/presentation/widgets/minutedropdown.dart';
 import 'package:ayurmitra/src/presentation/widgets/paymentopt.dart';
 
 import 'package:flutter/material.dart';
