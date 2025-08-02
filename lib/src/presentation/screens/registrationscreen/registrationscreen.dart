@@ -1,5 +1,6 @@
 import 'dart:developer';
 
+import 'package:ayurmitra/src/presentation/controller/invoicecontroller/invoicecontroller.dart';
 import 'package:ayurmitra/src/presentation/controller/registrationcontroller/registrationcontroller.dart';
 import 'package:ayurmitra/src/presentation/widgets/button1.dart';
 import 'package:ayurmitra/src/presentation/widgets/customTextField.dart';
@@ -20,6 +21,7 @@ class Registrationscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ctrl = Get.put(Registrationcontroller());
+    final invoiceCtrl = Get.put(InvoiceController());
     final TextEditingController textController = TextEditingController();
     return Scaffold(
       backgroundColor: Colors.white,
@@ -367,17 +369,22 @@ class Registrationscreen extends StatelessWidget {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    spacing: 4,
                     children: [
-                      HourDropdown(
-                        onChanged: (String? value) {
-                          log("hr:$value");
-                        },
+                      Expanded(
+                        child: HourDropdown(
+                          onChanged: (String? value) {
+                            log("hr:$value");
+                          },
+                        ),
                       ),
 
-                      MinuteDropdown(
-                        onChanged: (String? value) {
-                          log("min:$value");
-                        },
+                      Expanded(
+                        child: MinuteDropdown(
+                          onChanged: (String? value) {
+                            log("min:$value");
+                          },
+                        ),
                       ),
                     ],
                   ),
@@ -393,7 +400,12 @@ class Registrationscreen extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
-            child: Button1(title: 'Save', onTap: () {}),
+            child: Button1(
+              title: 'Save',
+              onTap: () {
+                invoiceCtrl.generateInvoice();
+              },
+            ),
           ),
         ],
       ),
