@@ -42,10 +42,15 @@ class Registrationscreen extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        SizedBox(
-                          height: 28,
-                          width: 28,
-                          child: Image.asset("assets/icons/back.png"),
+                        GestureDetector(
+                          onTap: () {
+                            Get.back();
+                          },
+                          child: SizedBox(
+                            height: 28,
+                            width: 28,
+                            child: Image.asset("assets/icons/back.png"),
+                          ),
                         ),
                         SizedBox(
                           height: 28,
