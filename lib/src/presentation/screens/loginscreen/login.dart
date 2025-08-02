@@ -1,7 +1,10 @@
+import 'package:ayurmitra/src/presentation/screens/homescreen/homescreen.dart';
+import 'package:ayurmitra/src/presentation/screens/registrationscreen/registrationscreen.dart';
 import 'package:ayurmitra/src/presentation/widgets/button1.dart';
 import 'package:ayurmitra/src/presentation/widgets/loginTailer.dart';
 import 'package:ayurmitra/src/presentation/widgets/privacyPolicy.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Login extends StatelessWidget {
@@ -123,7 +126,12 @@ class Login extends StatelessWidget {
           SizedBox(height: 84),
           Padding(
             padding: const EdgeInsets.all(20),
-            child: Button1(title: "Login", onTap: () {}),
+            child: Button1(
+              title: "Login",
+              onTap: () {
+                Get.to(() => Homescreen());
+              },
+            ),
           ),
         ],
       ),

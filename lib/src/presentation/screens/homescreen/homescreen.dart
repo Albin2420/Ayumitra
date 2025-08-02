@@ -1,9 +1,11 @@
 import 'dart:developer';
 
+import 'package:ayurmitra/src/presentation/screens/registrationscreen/registrationscreen.dart';
 import 'package:ayurmitra/src/presentation/widgets/bookingCard.dart';
 import 'package:ayurmitra/src/presentation/widgets/button1.dart';
 import 'package:ayurmitra/src/presentation/widgets/searchButton.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Homescreen extends StatelessWidget {
@@ -160,6 +162,11 @@ class Homescreen extends StatelessWidget {
             SizedBox(height: 10),
 
             Padding(
+              padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
+              child: Bookingcard(),
+            ),
+
+            Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
               child: Bookingcard(),
             ),
@@ -171,7 +178,12 @@ class Homescreen extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
-            child: Button1(title: 'Register Now', onTap: () {}),
+            child: Button1(
+              title: 'Register Now',
+              onTap: () {
+                Get.to(() => Registrationscreen());
+              },
+            ),
           ),
         ],
       ),
