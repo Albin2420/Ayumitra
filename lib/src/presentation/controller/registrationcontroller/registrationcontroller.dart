@@ -18,7 +18,6 @@ class Registrationcontroller extends GetxController {
           ),
           backgroundColor: Colors.white,
           child: Container(
-            width: MediaQuery.of(context).size.width,
             padding: const EdgeInsets.only(
               top: 40,
               left: 20,
@@ -62,7 +61,7 @@ class Registrationcontroller extends GetxController {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      width: 124,
+                      width: 100,
                       height: 50,
                       decoration: BoxDecoration(
                         color: const Color(0x40D9D9D9),
@@ -125,7 +124,7 @@ class Registrationcontroller extends GetxController {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      width: 124,
+                      width: 100,
                       height: 50,
                       decoration: BoxDecoration(
                         color: const Color(0x40D9D9D9),
