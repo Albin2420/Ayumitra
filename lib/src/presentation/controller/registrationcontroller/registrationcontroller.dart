@@ -7,6 +7,12 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Registrationcontroller extends GetxController {
+  @override
+  void onInit() {
+    log("Registrationcontroller()");
+    super.onInit();
+  }
+
   void addTreatmentInfo(BuildContext context) {
     showDialog(
       context: context,

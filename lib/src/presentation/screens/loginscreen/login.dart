@@ -1,5 +1,4 @@
 import 'package:ayurmitra/src/presentation/screens/homescreen/homescreen.dart';
-import 'package:ayurmitra/src/presentation/screens/registrationscreen/registrationscreen.dart';
 import 'package:ayurmitra/src/presentation/widgets/button1.dart';
 import 'package:ayurmitra/src/presentation/widgets/loginTailer.dart';
 import 'package:ayurmitra/src/presentation/widgets/privacyPolicy.dart';
