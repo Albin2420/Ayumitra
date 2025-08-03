@@ -21,7 +21,7 @@ class RadioButtonRowExample extends StatelessWidget {
                 value: 1,
                 groupValue: controller.selectedOption.value,
                 onChanged: (value) {
-                  controller.updateOption(value!);
+                  controller.setSelectedOption(value!);
                   onOptionSelected(value);
                 },
               ),
@@ -35,7 +35,7 @@ class RadioButtonRowExample extends StatelessWidget {
                 value: 2,
                 groupValue: controller.selectedOption.value,
                 onChanged: (value) {
-                  controller.updateOption(value!);
+                  controller.setSelectedOption(value!);
                   onOptionSelected(value);
                 },
               ),
@@ -49,7 +49,7 @@ class RadioButtonRowExample extends StatelessWidget {
                 value: 3,
                 groupValue: controller.selectedOption.value,
                 onChanged: (value) {
-                  controller.updateOption(value!);
+                  controller.setSelectedOption(value!);
                   onOptionSelected(value);
                 },
               ),
