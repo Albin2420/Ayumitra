@@ -80,7 +80,7 @@ class Login extends StatelessWidget {
           ),
           SizedBox(height: 25),
           Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20),
+            padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
             child: Column(
               spacing: 10,
               children: [
@@ -122,7 +122,7 @@ class Login extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 84),
+
           Padding(
             padding: const EdgeInsets.all(20),
             child: Button1(
@@ -135,10 +135,10 @@ class Login extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
+        padding: const EdgeInsets.only(left: 20, right: 20, bottom: 8),
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          children: [Privacypolicy(), SizedBox(height: 30)],
+          children: [Privacypolicy()],
         ),
       ),
     );
