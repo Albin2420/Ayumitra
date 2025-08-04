@@ -6,6 +6,7 @@ class Privacypolicy extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text.rich(
+      textAlign: TextAlign.center,
       TextSpan(
         text:
             'By creating or logging into an account you are agreeing with our ',
@@ -14,7 +15,6 @@ class Privacypolicy extends StatelessWidget {
           TextSpan(
             text: 'Terms and Conditions',
             style: TextStyle(color: Colors.blue),
-            // Add gesture recognizer for clickable link
           ),
           TextSpan(text: ' and '),
           TextSpan(

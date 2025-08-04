@@ -9,7 +9,7 @@ class AyurMitra extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'AyurMitra',
+      title: 'Ayur Mitra',
       debugShowCheckedModeBanner: false,
       builder: EasyLoading.init(),
       home: SplashScreen(),
